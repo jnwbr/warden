@@ -1,0 +1,14 @@
+{
+    "server": "thunderstrike",
+    "region": "eu",
+    "debugdiscordChannelId": "your_debug_channel_id",
+    "alternativeVerificationChannelId": "your_manual_verify_channel_id",
+    "roleId": "verified_member_role_id",
+    "absenceChannelId": "absence_announcements_channel_id",
+    "pendingAbsenceChannelId": "officer_approval_channel_id",
+    "officerRoleId": "officer_role_id",
+    "guildmemberRoleID": "guild_member_role_id",
+    "minPercentileDps": 50,
+    "minPercentileHealer": 30,
+    "minPercentileTank": 30
+}

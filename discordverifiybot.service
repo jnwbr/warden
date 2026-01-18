@@ -1,0 +1,18 @@
+[Unit]
+Description=verification bot discord
+# Wait for network to be fully online before starting
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=nas
+WorkingDirectory=/home/nas/Desktop/Bots/DiscordVerifyBot
+ExecStart=/usr/bin/node /home/nas/Desktop/Bots/DiscordVerifyBot/bot.js
+Restart=on-failure
+RestartSec=10
+# Give the service more time to start (useful for slow network)
+TimeoutStartSec=60
+
+[Install]
+WantedBy=multi-user.target
