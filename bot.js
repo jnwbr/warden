@@ -459,21 +459,21 @@ bot.on('interactionCreate', async (interaction) => {
                         await handleRoleAssignment();
                         await interaction.editReply({ content: `Successfully verified, enjoy your stay` });
                     } else {
-                        await interaction.editReply({ content: `Your performance does not meet our requirements. If you believe this is a mistake, you can contact <@380901972385071116>.` });
+                        await interaction.editReply({ content: `Your performance does not meet our requirements. If you believe this is a mistake, you can contact an administrator.` });
                     }
                 } else if (['healer', 'hps', 'heal', 'healing'].includes(characterMetric.toLowerCase())) {
                     if (averagePercentile >= minPercentileHealer && averagePercentile > 0) {
                         await handleRoleAssignment();
                         await interaction.editReply({ content: `Successfully verified, enjoy your stay` });
                     } else {
-                        await interaction.editReply({ content: `Your performance does not meet our requirements. If you believe this is a mistake, you can contact <@380901972385071116>.` });
+                        await interaction.editReply({ content: `Your performance does not meet our requirements. If you believe this is a mistake, you can contact an administrator.` });
                     }
                 } else if (characterMetric.toLowerCase() == 'tank') {
                     if (averagePercentile >= minPercentileTank && averagePercentile > 0) {
                         await handleRoleAssignment();
                         await interaction.editReply({ content: `Successfully verified, enjoy your stay` });
                     } else {
-                        await interaction.editReply({ content: `Your performance does not meet our requirements. If you believe this is a mistake, you can contact <@380901972385071116>.` });
+                        await interaction.editReply({ content: `Your performance does not meet our requirements. If you believe this is a mistake, you can contact an administrator.` });
                     }
                 }
             } catch (error) {
