@@ -1,4 +1,5 @@
 {
+    "guildId": "your_discord_guild_id",
     "server": "thunderstrike",
     "region": "eu",
     "debugdiscordChannelId": "your_debug_channel_id",
